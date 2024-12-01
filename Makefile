@@ -6,7 +6,7 @@
 #    By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 17:19:18 by jodougla          #+#    #+#              #
-#    Updated: 2024/12/01 16:55:38 by jodougla         ###   ########.fr        #
+#    Updated: 2024/12/01 21:09:42 by jodougla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,20 +98,20 @@ PURPLE 	:=\033[0;35m
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	 ar -rc $(NAME) $(OBJS)
+	 @ar -rc $(NAME) $(OBJS)
+	 @echo "$(GREEN) libft.a as been create$(NC)\n"
 
 $(DIR_OBJS)/%.o : %.c
 	mkdir -p $(@D)
-	echo "create .o"
 	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ 
 
 clean :
-	$(RM) $(DIR_OBJS)
-	echo "${RED} .objs folder remove${NC}\n"
+	@$(RM) $(DIR_OBJS)
+	@echo "${RED} .objs folder remove${NC}\n"
 
 fclean : clean
-	rm -f $(NAME)
-	echo "${RED}$(NAME) removed${NC}\n"
+	@rm -f $(NAME)
+	@echo "${RED}$(NAME) removed${NC}\n"
 
 re : fclean all
 
