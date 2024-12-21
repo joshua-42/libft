@@ -1,47 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   alloc_manager.c                                    :+:      :+:    :+:   */
+/*   dlst_add_back.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/01 16:54:22 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:59:23 by jodougla         ###   ########.fr       */
+/*   Created: 2024/12/05 20:33:30 by jodougla          #+#    #+#             */
+/*   Updated: 2024/12/07 02:48:37 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-t_list	**get_alloc(void)
+void	dlst_addback(t_dlist **lst, t_dlist *node)
 {
-	static t_list	*lst;
+	t_dlist	*tmp;
+	t_dlist	*tmp2;
+	t_dlist	*head;
 
 	if (!lst)
-		lst = ft_lstnew(NULL);
-	return (&lst);
-}
-
-void	push(void *malloc_adress)
-{
-	t_list	**alloc;
-
-	alloc = get_alloc();
-	ft_lstadd_front(alloc, ft_lstnew(malloc_adress));
-}
-
-__attribute__ ((destructor)) void	free_alloc(void)
-{
-	t_list	**alloc;
-	t_list	*tmp;
-
-	alloc = get_alloc();
-	if (!alloc)
 		return ;
-	tmp = *alloc;
-	while (tmp)
+	if (!*lst)
 	{
-		tmp = (*alloc)->next;
-		free ((*alloc)->content);
-		free (*alloc);
-		*alloc = tmp;
+		*lst = node;
+		return ;
 	}
+	tmp = *lst;
+	tmp2 = (*lst)->next;
+	head = *lst;
+	while (tmp2 && tmp->next != head)
+	{
+		tmp = tmp->next;
+		tmp2 = tmp2->next;
+	}
+	tmp2 = node;
+	tmp2->next = head;
+	tmp2->prev = tmp;
+	tmp->next = tmp2;
+	head->prev = tmp2;
 }

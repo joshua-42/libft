@@ -6,7 +6,7 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:12:10 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:14:20 by jodougla         ###   ########.fr       */
+/*   Updated: 2024/12/21 21:35:02 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -14,18 +14,27 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
+# include <stdbool.h>
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
 
+typedef struct s_dlist
+{
+	void			*content;
+	struct s_dlist	*next;
+	struct s_dlist	*prev;
+}					t_dlist;
+
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+bool	ft_isspace(int c);
+bool	ft_issign(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -64,6 +73,12 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-void		push(void *malloc_adress);
+void	push(void *malloc_adress);
+void	dlst_addback(t_dlist **lst, t_dlist *node);
+void	dlst_addfront(t_dlist **lst, t_dlist *node);
+void	dlst_clear(t_dlist **lst, void (*del)(void *));
+t_dlist	*dlst_last(t_dlist **lst);
+int		dlst_len(t_dlist **lst);
+t_dlist	*dlst_new(void *content);
 
 #endif
