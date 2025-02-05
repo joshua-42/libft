@@ -6,7 +6,7 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:37:44 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:59:11 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/01/28 15:51:11 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
@@ -51,7 +51,7 @@ static int	ft_write_word(char const *s, char **word,
 {
 	int	i;
 
-	*word = malloc(sizeof(char) * (end_index - start_index + 1));
+	*word = ft_calloc(sizeof(char), (end_index - start_index + 1));
 	if (!*word)
 		return (0);
 	i = 0;
@@ -76,7 +76,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = ft_count_words(s, c);
-	result = malloc(sizeof(char *) * (words + 1));
+	result = ft_calloc(sizeof(char *), (words + 1));
 	if (!result)
 		return (NULL);
 	i = 0;

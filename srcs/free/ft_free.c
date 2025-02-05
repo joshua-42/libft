@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 23:47:09 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:43:44 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/05 10:18:25 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/05 10:21:49 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-bool	ft_isprint(int c)
+void	ft_free(char **str)
 {
-	if ((unsigned int) c - ' ' < 95)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		free(str[i++]);
+	}
+	free(str);
 }

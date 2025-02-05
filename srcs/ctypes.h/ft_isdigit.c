@@ -6,12 +6,14 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 17:56:28 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:02:03 by jodougla         ###   ########.fr       */
+/*   Updated: 2024/12/21 21:43:23 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-int	ft_isdigit(int c)
+bool	ft_isdigit(int c)
 {
-	return ((unsigned int)c - 48 < 10);
+	if ((unsigned int)c - 48 < 10)
+		return (1);
+	return (0);
 }

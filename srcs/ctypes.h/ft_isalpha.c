@@ -6,12 +6,14 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 17:45:28 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:45 by jodougla         ###   ########.fr       */
+/*   Updated: 2024/12/21 21:42:19 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-int	ft_isalpha(int c)
+bool	ft_isalpha(int c)
 {
-	return (((unsigned int)c | 32) - 'a' < 26);
+	if (((unsigned int)c | 32) - 'a' < 26)
+		return (1);
+	return (0);
 }

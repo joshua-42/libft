@@ -6,12 +6,12 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 21:06:24 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:38 by jodougla         ###   ########.fr       */
+/*   Updated: 2024/12/21 21:40:08 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-int	ft_isalnum(int c)
+bool	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }

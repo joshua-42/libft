@@ -6,12 +6,14 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 23:40:13 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:56 by jodougla         ###   ########.fr       */
+/*   Updated: 2024/12/21 21:42:57 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-int	ft_isascii(int c)
+bool	ft_isascii(int c)
 {
-	return ((unsigned int)c <= 127);
+	if ((unsigned int)c <= 127)
+		return (1);
+	return (0);
 }

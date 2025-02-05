@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   free_cleanup_char.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 23:47:09 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:43:44 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/05 10:23:31 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/05 10:26:48 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
 
-bool	ft_isprint(int c)
+void	free_cleanup_char(char **str)
 {
-	if ((unsigned int) c - ' ' < 95)
-		return (1);
-	return (0);
+	free(*str);
+	str = NULL;
 }

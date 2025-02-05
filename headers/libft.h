@@ -6,7 +6,7 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:12:10 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:35:02 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/05 11:24:41 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -15,6 +15,18 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdbool.h>
+# include <math.h>
+# include <stdarg.h>
+# include <stdint.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+# define HEXA_UPPER "0123456789ABCDEF"
+# define HEXA_LOWER "0123456789abcdef"
+# define INT_MIN "-2147483648"
+
 typedef struct s_list
 {
 	void			*content;
@@ -28,11 +40,11 @@ typedef struct s_dlist
 	struct s_dlist	*prev;
 }					t_dlist;
 
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
+bool	ft_isdigit(int c);
+bool	ft_isalpha(int c);
+bool	ft_isalnum(int c);
+bool	ft_isascii(int c);
+bool	ft_isprint(int c);
 bool	ft_isspace(int c);
 bool	ft_issign(int c);
 size_t	ft_strlen(const char *s);
@@ -64,6 +76,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+float	ft_atof(char *str);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
@@ -80,5 +93,37 @@ void	dlst_clear(t_dlist **lst, void (*del)(void *));
 t_dlist	*dlst_last(t_dlist **lst);
 int		dlst_len(t_dlist **lst);
 t_dlist	*dlst_new(void *content);
+void	ft_free(char **str);
+void	free_cleanup_char(char **str);
+void	close_fd(int num_fd, ...);
+
+/*****************************************************************************/
+/*																			 */	
+/*		FT_PRINTF_FUNCTION													 */
+/*																			 */
+/*****************************************************************************/
+
+int		ft_printf(const char *str, ...) __attribute__((format(printf, 1, 2)));
+int		ft_check_the_string(va_list ap, const char *f_ptr, int len);
+int		ft_printf(const char *str, ...);
+int		ft_check_the_string(va_list ap, const char *str, int len);
+int		ft_putchar(int c);
+int		ft_putstr(char *str);
+int		ft_putchar_hexa(unsigned int nb, int flag);
+int		ft_putnbr_hexa(unsigned int nb, int flag);
+int		ft_putunsigned_nbr(unsigned int nb);
+int		ft_putnbr(int nb);
+int		ft_putptr(unsigned long str);
+int		ft_atoi_hexa(char *str);
+int		ft_putnbr_mem(unsigned long nb, int flag);
+
+/*****************************************************************************/
+/*																			 */	
+/*		FT_PRINTF_FUNCTION													 */
+/*																			 */
+/*****************************************************************************/
+
+char	*get_next_line(int fd);
+char	*ft_strnjoin(char *s1, char *s2, int len);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 17:19:18 by jodougla          #+#    #+#              #
-#    Updated: 2024/12/21 21:34:35 by jodougla         ###   ########.fr        #
+#    Updated: 2025/02/05 11:25:29 by jodougla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ SRCS 		:=	ctypes.h/ft_isalpha.c \
 				stdlib/ft_atoi.c \
 				stdlib/ft_calloc.c \
 				stdlib/ft_strdup.c \
+				stdlib/ft_atof.c \
 				str/ft_substr.c \
 				str/ft_strjoin.c \
 				str/ft_split.c \
@@ -59,6 +60,7 @@ SRCS 		:=	ctypes.h/ft_isalpha.c \
 				type_fd/ft_putstr_fd.c \
 				type_fd/ft_putendl_fd.c \
 				type_fd/ft_putnbr_fd.c \
+				type_fd/close_fd.c \
 				str/ft_strmapi.c \
 				str/ft_itoa.c \
 				lst/ft_lstnew.c \
@@ -77,14 +79,22 @@ SRCS 		:=	ctypes.h/ft_isalpha.c \
 				dlst/dlst_last.c \
 				dlst/dlst_len.c \
 				dlst/dlst_new.c \
+				printf/ft_printf.c \
+				printf/ft_printf_str.c \
+				printf/ft_putnbr.c \
+				printf/ft_putnbr_hexa.c \
+				printf/ft_putnbr.c \
+				gnl/get_next_line_bonus.c \
+				gnl/get_next_line_utils_bonus.c \
+				free/ft_free.c \
+				free/free_cleanup_char.c \
 
 SRCS			:= $(addprefix $(DIR_SRCS)/, $(SRCS))
 OBJS 			:= $(addprefix $(DIR_OBJS)/, $(SRCS:%.c=%.o))
 
-
-
-RM			:=rm -rf
-DIR_DUP		:=mkdir -p $(@D)
+RM				:= rm -rf
+DIR_DUP			:= mkdir -p $(@D)
+AR				:= ar -rc
 
 #####################################################################
 #																	#
@@ -106,20 +116,17 @@ PURPLE 	:=\033[0;35m
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	 @ar -rc $(NAME) $(OBJS)
-	 @echo "$(GREEN) libft.a as been create$(NC)\n"
+	@$(AR) $(NAME) $(OBJS)
 
 $(DIR_OBJS)/%.o : %.c
-	mkdir -p $(@D)
+	@mkdir -p $(@D)
 	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@ 
 
 clean :
 	@$(RM) $(DIR_OBJS)
-	@echo "${RED} .objs folder remove${NC}\n"
 
 fclean : clean
 	@rm -f $(NAME)
-	@echo "${RED}$(NAME) removed${NC}\n"
 
 re : fclean all
 
