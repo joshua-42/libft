@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 20:09:23 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/20 11:42:41 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:57:11 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <gnl.h>
 
 size_t	ft_strlen_gnl(char *str)
 {

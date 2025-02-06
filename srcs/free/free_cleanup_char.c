@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 10:23:31 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/05 10:26:48 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:48:45 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_free.h>
 
 void	free_cleanup_char(char **str)
 {

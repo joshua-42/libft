@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 21:58:45 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:57:33 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:00:26 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

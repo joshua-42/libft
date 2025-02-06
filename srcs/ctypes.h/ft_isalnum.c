@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 21:06:24 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:40:08 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:17:39 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 bool	ft_isalnum(int c)
 {

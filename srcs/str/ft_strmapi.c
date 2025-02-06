@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 02:59:45 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:59:54 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:21:30 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

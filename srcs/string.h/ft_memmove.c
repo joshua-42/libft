@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 01:23:45 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:57:50 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:00:45 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:54:22 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:59:23 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:14:09 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <alloc.h>
 
 t_list	**get_alloc(void)
 {

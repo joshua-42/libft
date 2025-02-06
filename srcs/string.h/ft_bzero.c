@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 00:41:31 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:57:19 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:00:00 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 20:03:31 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/20 10:58:12 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:57:05 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <gnl.h>
 
 char	*loop(char *line, int fd, char *backlash, int bytes_read)
 {

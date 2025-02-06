@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:09:23 by jodougla          #+#    #+#             */
-/*   Updated: 2024/11/25 21:35:37 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:18:35 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 bool	ft_isspace(int c)
 {

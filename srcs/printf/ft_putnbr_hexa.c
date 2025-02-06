@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 14:31:05 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/19 22:19:09 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:54:51 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_printf.h>
 
 int	ft_putchar_hexa(unsigned int nb, int flag)
 {

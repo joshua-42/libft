@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dlst_clear.c                                       :+:      :+:    :+:   */
+/*   ft_type.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 17:38:49 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 15:05:32 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/05 16:15:20 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/06 14:39:22 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <dlst.h>
+#ifndef FT_TYPE_H
+# define FT_TYPE_H
 
-void	dlst_clear(t_dlist **lst, void (*del)(void *))
-{
-	t_dlist	*tmp;
-	t_dlist	*tmp2;
+# include <stdbool.h>
 
-	tmp = (*lst)->next;
-	tmp2 = (*lst)->next->next;
-	while (tmp != *lst)
-	{
-		if (del)
-			del(tmp->content);
-		free(tmp);
-		tmp = tmp2;
-		tmp2 = tmp->next;
-	}
-	if (del)
-		del(tmp->content);
-	free (*lst);
-	free(lst);
-}
+bool	ft_isalnum(int c);
+bool	ft_isalpha(int c);
+bool	ft_isascii(int c);
+bool	ft_isdigit(int c);
+bool	ft_isprint(int c);
+bool	ft_issign(int c);
+bool	ft_isspace(int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+
+#endif

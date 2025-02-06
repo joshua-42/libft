@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dlst_clear.c                                       :+:      :+:    :+:   */
+/*   ft_stdlib.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 17:38:49 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 15:05:32 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/06 15:07:58 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/06 15:19:56 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <dlst.h>
+#ifndef FT_STDLIB_H
+# define FT_STDLIB_H
 
-void	dlst_clear(t_dlist **lst, void (*del)(void *))
-{
-	t_dlist	*tmp;
-	t_dlist	*tmp2;
+# include "ft_type.h"
+# include "ft_string.h"
+# include <stdlib.h>
+# include <math.h>
 
-	tmp = (*lst)->next;
-	tmp2 = (*lst)->next->next;
-	while (tmp != *lst)
-	{
-		if (del)
-			del(tmp->content);
-		free(tmp);
-		tmp = tmp2;
-		tmp2 = tmp->next;
-	}
-	if (del)
-		del(tmp->content);
-	free (*lst);
-	free(lst);
-}
+float	ft_atof(char *str);
+int		ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmeb, size_t size);
+char	*ft_strdup(const char *s);
+
+#endif

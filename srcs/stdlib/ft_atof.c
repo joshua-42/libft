@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:02:09 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/22 01:38:25 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:09:18 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_stdlib.h>
 
 float	calcul_fnum(char *str, float num, int exp)
 {

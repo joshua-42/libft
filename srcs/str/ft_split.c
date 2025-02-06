@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 17:37:44 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/28 15:51:11 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:21:06 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 static int	ft_count_words(char const *s, char c)
 {

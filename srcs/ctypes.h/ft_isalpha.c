@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 17:45:28 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:42:19 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:17:49 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 bool	ft_isalpha(int c)
 {

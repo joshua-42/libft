@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:02:50 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:02:17 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:18:40 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 int	ft_tolower(int c)
 {

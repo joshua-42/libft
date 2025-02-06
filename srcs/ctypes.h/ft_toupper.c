@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 17:52:05 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:02:24 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:19:09 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 int	ft_toupper(int c)
 {

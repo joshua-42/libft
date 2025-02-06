@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dlst_clear.c                                       :+:      :+:    :+:   */
+/*   ft_free.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 17:38:49 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 15:05:32 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/06 15:47:33 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/06 15:52:35 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <dlst.h>
+#ifndef FT_FREE_H
+# define FT_FREE_H
 
-void	dlst_clear(t_dlist **lst, void (*del)(void *))
-{
-	t_dlist	*tmp;
-	t_dlist	*tmp2;
+# include <stdlib.h>
 
-	tmp = (*lst)->next;
-	tmp2 = (*lst)->next->next;
-	while (tmp != *lst)
-	{
-		if (del)
-			del(tmp->content);
-		free(tmp);
-		tmp = tmp2;
-		tmp2 = tmp->next;
-	}
-	if (del)
-		del(tmp->content);
-	free (*lst);
-	free(lst);
-}
+void	ft_free(char **str);
+void	free_cleanup_char(char **str);
+
+#endif

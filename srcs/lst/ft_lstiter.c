@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 07:32:27 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:03 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:23:00 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <lst.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

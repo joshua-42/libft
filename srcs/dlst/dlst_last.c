@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 22:49:41 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/07 02:46:55 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:05:39 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <dlst.h>
 
 t_dlist	*dlst_last(t_dlist **lst)
 {

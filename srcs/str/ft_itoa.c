@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 04:27:07 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:59:03 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:20:56 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 static int	count_num(int nb)
 {

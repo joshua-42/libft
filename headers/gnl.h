@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dlst_clear.c                                       :+:      :+:    :+:   */
+/*   gnl.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 17:38:49 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 15:05:32 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/06 15:55:55 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/06 16:02:32 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <dlst.h>
+#ifndef GNL_H
+# define GNL_H
 
-void	dlst_clear(t_dlist **lst, void (*del)(void *))
-{
-	t_dlist	*tmp;
-	t_dlist	*tmp2;
+# include "ft_string.h"
+# include <stdlib.h>
+# include <unistd.h>
 
-	tmp = (*lst)->next;
-	tmp2 = (*lst)->next->next;
-	while (tmp != *lst)
-	{
-		if (del)
-			del(tmp->content);
-		free(tmp);
-		tmp = tmp2;
-		tmp2 = tmp->next;
-	}
-	if (del)
-		del(tmp->content);
-	free (*lst);
-	free(lst);
-}
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+char	*get_next_line(int fd);
+char	*ft_strnjoin(char *s1, char *s2, int len);
+
+#endif

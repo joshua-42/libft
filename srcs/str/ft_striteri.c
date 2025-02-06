@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:48:50 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:59:38 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:21:11 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

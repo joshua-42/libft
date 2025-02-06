@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dlst_clear.c                                       :+:      :+:    :+:   */
+/*   ft_fd.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 17:38:49 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 15:05:32 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/06 15:44:18 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/06 15:47:25 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <dlst.h>
+#ifndef FT_FD_H
+# define FT_FD_H
 
-void	dlst_clear(t_dlist **lst, void (*del)(void *))
-{
-	t_dlist	*tmp;
-	t_dlist	*tmp2;
+# include <unistd.h>
+# include <stdarg.h>
 
-	tmp = (*lst)->next;
-	tmp2 = (*lst)->next->next;
-	while (tmp != *lst)
-	{
-		if (del)
-			del(tmp->content);
-		free(tmp);
-		tmp = tmp2;
-		tmp2 = tmp->next;
-	}
-	if (del)
-		del(tmp->content);
-	free (*lst);
-	free(lst);
-}
+void	close_fd(int num_fd, ...);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *s, int fd);
+
+#endif

@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 20:43:35 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:59:47 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:21:16 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

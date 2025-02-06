@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:25:11 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:58:24 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:01:19 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

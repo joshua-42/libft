@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:24:17 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:57:41 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:00:36 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

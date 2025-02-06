@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:39:09 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 16:58:08 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:01:01 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_string.h>
 
 char	*ft_strchr(const char *s, int c)
 {

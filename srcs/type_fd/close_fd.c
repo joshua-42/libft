@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:20:32 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/05 11:23:08 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:46:24 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_fd.h>
 
 void	close_fd(int num_fd, ...)
 {

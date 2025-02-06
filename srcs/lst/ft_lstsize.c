@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 02:07:40 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:31 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:24:25 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <lst.h>
 
 int	ft_lstsize(t_list *lst)
 {

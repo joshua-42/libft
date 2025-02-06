@@ -6,12 +6,12 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 01:18:46 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/19 22:18:12 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:54:22 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_printf.h>
 
-int	ft_check_the_string(va_list ap, const char *f_ptr, int len)
+static int	ft_check_the_string(va_list ap, const char *f_ptr, int len)
 {
 	if (!*f_ptr)
 		return (len);

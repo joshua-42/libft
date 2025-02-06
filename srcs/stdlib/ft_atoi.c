@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:18:49 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:00:16 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:15:08 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {

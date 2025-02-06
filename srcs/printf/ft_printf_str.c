@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:49:22 by jodougla          #+#    #+#             */
-/*   Updated: 2025/01/19 22:18:54 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:54:36 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include <ft_printf.h>
 
 int	ft_putchar(int c)
 {

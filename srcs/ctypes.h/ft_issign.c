@@ -6,10 +6,10 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 21:23:11 by jodougla          #+#    #+#             */
-/*   Updated: 2024/11/25 21:26:18 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:18:29 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 bool	ft_issign(int c)
 {

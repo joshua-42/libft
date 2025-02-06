@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 16:14:49 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:12:00 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:46:36 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_fd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

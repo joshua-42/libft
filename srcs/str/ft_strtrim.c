@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:13:56 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:00:00 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:21:35 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_str.h>
 
 static int	ft_isset(char c, char *set)
 {

@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 23:47:09 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/21 21:43:44 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:18:21 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <ft_type.h>
 
 bool	ft_isprint(int c)
 {

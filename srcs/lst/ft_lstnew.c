@@ -6,10 +6,10 @@
 /*   By: jodougla <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 01:44:26 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/01 17:01:24 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:23:16 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <lst.h>
 
 t_list	*ft_lstnew(void *content)
 {

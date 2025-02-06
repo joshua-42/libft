@@ -6,16 +6,16 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:32:58 by jodougla          #+#    #+#             */
-/*   Updated: 2024/12/07 02:47:26 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/06 15:07:32 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include <dlst.h>
 
 t_dlist	*dlst_new(void *content)
 {
 	t_dlist	*node;
 
-	node = malloc(sizeof(t_list));
+	node = malloc(sizeof(t_dlist));
 	if (!node)
 		return (NULL);
 	node->prev = node;
