@@ -6,13 +6,16 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 14:58:14 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 16:02:27 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/15 19:37:35 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_STRING_H
-#define FT_STRING_H
+# define FT_STRING_H
 
-#include <stdlib.h>
+# include <stdlib.h>
+
+# define ONES 0x0101010101010101
+# define HIGHS 0x0808080808080808
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
