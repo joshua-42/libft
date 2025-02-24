@@ -1,20 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   alloc.h                                            :+:      :+:    :+:   */
+/*   free_manager.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/06 13:55:35 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/24 12:40:27 by jodougla         ###   ########.fr       */
+/*   Created: 2025/02/24 11:16:33 by jodougla          #+#    #+#             */
+/*   Updated: 2025/02/24 12:43:26 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef ALLOC_H
-# define ALLOC_H
+#include <alloc.h>
 
-# include "lst.h"
+void	free_manager(void *adress)
+{
+	t_list	**lst;
+	t_list	*curent;
+	t_list	*prev;
 
-void	push(void *malloc_adress);
-void	free_manager(void *adress);
-
-#endif
+	if (!adress)
+		return ;
+	lst = get_alloc();
+	curent = *lst;
+	prev = NULL;
+	while (curent && curent->content != adress)
+	{
+		prev = current;
+		curent = curent->next;
+	}
+	if (prev == NULL)
+		*lst = curent->next;
+	else
+		prev->next = content->next;
+	free(content->content);
+	free(content);
+}
