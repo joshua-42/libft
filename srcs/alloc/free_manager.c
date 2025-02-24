@@ -6,7 +6,7 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 11:16:33 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/24 12:43:26 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/24 12:56:28 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <alloc.h>
@@ -24,13 +24,13 @@ void	free_manager(void *adress)
 	prev = NULL;
 	while (curent && curent->content != adress)
 	{
-		prev = current;
+		prev = curent;
 		curent = curent->next;
 	}
 	if (prev == NULL)
 		*lst = curent->next;
 	else
-		prev->next = content->next;
-	free(content->content);
-	free(content);
+		prev->next = curent->next;
+	free(curent->content);
+	free(curent);
 }
