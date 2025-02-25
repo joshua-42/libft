@@ -6,18 +6,42 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 16:54:22 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/06 14:14:09 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/25 10:40:16 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <alloc.h>
 
-t_list	**get_alloc(void)
+static t_list	**get_alloc(void)
 {
 	static t_list	*lst;
 
 	if (!lst)
 		lst = ft_lstnew(NULL);
 	return (&lst);
+}
+
+void	free_manager(void *adress)
+{
+	t_list	**lst;
+	t_list	*curent;
+	t_list	*prev;
+
+	if (!adress)
+		return ;
+	lst = get_alloc();
+	curent = *lst;
+	prev = NULL;
+	while (curent && curent->content != adress)
+	{
+		prev = curent;
+		curent = curent->next;
+	}
+	if (prev == NULL)
+		*lst = curent->next;
+	else
+		prev->next = curent->next;
+	free(curent->content);
+	free(curent);
 }
 
 void	push(void *malloc_adress)

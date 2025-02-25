@@ -6,7 +6,7 @@
 #    By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/05 15:52:12 by jodougla          #+#    #+#              #
-#    Updated: 2025/02/24 12:40:43 by jodougla         ###   ########.fr        #
+#    Updated: 2025/02/25 10:28:38 by jodougla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,6 @@ SRCS	:=		ctypes.h/ft_isalpha.c \
 				lst/ft_lstiter.c \
 				lst/ft_lstmap.c \
 				alloc/alloc_manager.c \
-				alloc/free_manager.c \
 				dlst/dlst_add_back.c \
 				dlst/dlst_addfront.c \
 				dlst/dlst_clear.c \

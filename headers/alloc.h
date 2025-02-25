@@ -6,7 +6,7 @@
 /*   By: jodougla <jodougla@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:55:35 by jodougla          #+#    #+#             */
-/*   Updated: 2025/02/24 12:57:00 by jodougla         ###   ########.fr       */
+/*   Updated: 2025/02/25 10:29:44 by jodougla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef ALLOC_H
@@ -16,6 +16,5 @@
 
 void	push(void *malloc_adress);
 void	free_manager(void *adress);
-t_list	**get_alloc(void);
 
 #endif
